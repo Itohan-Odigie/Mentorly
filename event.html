@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mentorly</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- ICONS FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&family=Poppins:wght@600&display=swap');
+
+  body {
+    background-color: #ABCDCD;
+  }
+
+  html {
+    background-color: #ABCDCD;
+
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    font-size: 47px;
+    color: #F5E9E9;
+    margin-top: 5%;
+    padding: 45px;
+    text-align: center;
+    font-family: 'Poppins', san-serif;
+
+  }
+
+  h1Cal {
+    margin-top: 65%;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 38px;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+  }
+
+  #section01 {
+    position: absolute;
+    top: 90%;
+    left: 49.25%;
+  }
+
+  #section01::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+  }
+
+  img {
+    width: 500px;
+    height: 400px;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+
+  }
+</style>
+
+<body>
+  <script src="script.js"></script>
+  <nav id="navbar">
+    <ul class="menu">
+      <!-- IMAGE LOGO -->
+      <a href="home.html" class="logo"> Home </a>
+      <p> Sam Singh <span> (Mentee) </span></p>
+      <li id="signout"><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</a></li>
+      <li id="calendar"><a href="event.html"><i class="fa-solid fa-calendar-days"></i>Events</a></li>
+      <li id="chat"><a href="forum.html"><i class="fa-solid fa-comments"></i>Forum</a></li>
+      <li id="book"><a href="journal.html"><i class="fa fa-book" aria-hidden="true"></i>Journal</a></li>
+      <li id="mentors"><a href="mentor.html"><i class="fa fa-users" aria-hidden="true"></i>Mentors</a></li>
+      <li id="homeicon"><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+    </ul>
+  </nav>
+  <div class="sectionOneEvent">
+    <h1>Join fun activities led by our mentors </br> to bond, learn and </br>laugh with our community</h1>
+    <!--<center><img src="images/eventIcons.png" class="eventImg"></img></center>-->
+    <div id="container">
+      </center>
+      <div class="steam" id="steam1"> </div>
+      <div class="steam" id="steam2"> </div>
+      <div class="steam" id="steam3"> </div>
+      <div class="steam" id="steam4"> </div>
+
+      <div id="cup">
+        <div id="cup-body">
+          <div id="cup-shade"></div>
+        </div>
+        <div id="cup-handle"></div>
+      </div>
+
+      <div id="saucer"></div>
+
+      <div id="shadow"></div>
+    </div>
+    </center>
+    <section id="section01" class="demo">
+      <center><a href="#section02"><span></span>Scroll</a></center>
+    </section>
+    <section id="section02">
+      <div>
+        <h1 class="h1Cal">Event Calender</h1>
+      </div>
+      <div class="containerCal">
+        <div class="calendar">
+          <div class="front">
+            <div class="current-date">
+              <h1>Friday 15th</h1>
+              <h1>August 2022</h1>
+            </div>
+
+            <div class="current-month">
+              <ul class="week-days">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+              </ul>
+
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">28</span>
+                  <span class="last-month">29</span>
+                  <span class="last-month">30</span>
+                  <span class="last-month">31</span>
+                  <span>01</span>
+                  <span>02</span>
+                  <span>03</span>
+                </div>
+
+                <div class="second">
+                  <span>04</span>
+                  <span>05</span>
+                  <span class="event">06</span>
+                  <span>07</span>
+                  <span>08</span>
+                  <span>09</span>
+                  <span>10</span>
+                </div>
+
+                <div class="third">
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span class="active">15</span>
+                  <span>16</span>
+                  <span>17</span>
+                </div>
+
+                <div class="fourth">
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                  <span>24</span>
+                </div>
+
+                <div class="fifth">
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="back">
+            <div class="info">
+              <div class="date">
+                <p class="info-date">
+                  Date: <span>August 6th, 2022</span>
+                </p>
+                <p class="info-time">
+                  Time: <span>6:35 PM</span>
+                </p>
+              </div>
+              <div class="address">
+                <p>
+                  Where: <span>Zoom</span>
+                </p>
+              </div>
+              <div class="observations">
+                <p>
+                  EventBrite Link: <a
+                    href="https://www.eventbrite.ca/e/online-party-game-night-a-fun-social-event-on-zoom-tickets-341371781187?aff=ebdssbdestsearch&keep_tld=1">Zoom
+                    Social Event</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="save">
+                Save <i class="ion-checkmark"></i>
+              </button>
+              <button class="dismiss">
+                Dismiss <i class="ion-android-close"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="scrollPart2" class="demo2">
+      <center><a href="#sectionSlide"><span></span>Scroll</a></center>
+    </section>
+    <section>
+      <div id="sectionSlide" class="CSSgal">
+
+        <!-- Don't wrap targets in parent -->
+        <s id="s1"></s>
+        <s id="s2"></s>
+        <s id="s3"></s>
+        <s id="s4"></s>
+
+        <div class="slider">
+          <div style="background:#5b8;">
+            <h2>Our <b>Mentor</b> EVENTS</h2>
+            <p>Events, Games and Fun<br>by Mentorly</p>
+          </div>
+          <div style="background:#85b;">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.tKhF5GkHeLFxeOd2MYBwegHaFj&pid=Api&P=0" width="500"
+              height="575"></a>
+          </div>
+          <div style="background:#e95;">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.peHri-qgJYwQBUvEsrcDXAHaFi&pid=Api&P=0" width="500"
+              height="575"></a>
+          </div>
+          <div style="background:#e59;">
+            <h2>Slide 4</h2>
+          </div>
+        </div>
+
+        <div class="prevNext">
+          <div><a href="#s4"></a><a href="#s2"></a></div>
+          <div><a href="#s1"></a><a href="#s3"></a></div>
+          <div><a href="#s2"></a><a href="#s4"></a></div>
+          <div><a href="#s3"></a><a href="#s1"></a></div>
+        </div>
+
+        <div class="bullets">
+          <a href="#s1">1</a>
+          <a href="#s2">2</a>
+          <a href="#s3">3</a>
+          <a href="#s4">4</a>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <h1>footer lol</h1>
+    </section>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
+    </script>
+    <script src="script.js"></script>
+</body>

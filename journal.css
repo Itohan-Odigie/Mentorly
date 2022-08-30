@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    margin: 0; 
+	padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+  h1 {
+    font-size: 64px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 90px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .button-81 {
+    font-size: 20px;
+  }
+
+#navbar {
+    /* overflow: hidden; */
+    position: fixed;
+    /*making it so my navbar is always up there no matter where you scroll*/
+    top: -1%;
+    bottom: 90%;
+    /*making it so my navbar is at the top*/
+    width: 100%; /*making it so the navbar goes from one end to the other*/
+    background-color: lightblue;
+    /*just a precaution if the image doesn't show*/
+    background-size: 100%;
+    /*making it so my background is 100% of the og image*/
+    margin:0%;
+    z-index: 20;
+}
+
+#navbar ul { 
+    margin-left: 1px;
+  margin-top: 14px;
+	} 
+
+#navbar ul li { 
+    float: right; 
+    list-style-type: none;
+    display: inline-block; /* IMPORTANT! IT PUTS THE NAV WORDS SIDE BY SIDE */
+	padding: 15px; /* puts space in between the words */
+} 
+ 
+    /* NAV BAR WORDS */
+#navbar ul li a { 
+    font-family: 'Poppins', sans-serif;
+	text-decoration: none; 
+    font-size: 19px;
+	color: rgb(61, 119, 138); 
+	background-color: transparent; 
+
+	} 
+ 
+#navbar ul li a:hover { 
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    padding-bottom: 9px;
+    padding-top: 8px;
+    font-size: 18px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(119, 116, 129, 0.795) 0 1px 30px;
+    transition-duration: .1s;
+	} 
+
+    /* ------------IMAGE LOGO (in navbar)----------------- */
+    /* do a similar technique like naomi, 1)put a random word as a placeholder (MUST BE IN DIV)
+    2) replace the word with an image
+    3) make the word transparent */
+    #navbar a.logo{
+        color: transparent; /*making the text invisible bc i only want the logo not text*/
+        background-image: url("img/user.png");
+        /* border-radius: 260px; */
+        background-size: 100%; 
+        /* ADJUSTS THE IMAGE SO IT WILL BE MORE VISIBLE */
+        background-repeat: no-repeat; /*makes it so the logo doesn't repeat*/
+        position: relative;
+        top: -13px;
+        left: -13px;
+        padding: 0px 40px 100px 0px;
+        font-size: 9px;
+        }
+
+        /* Named */
+    #navbar p{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        /* PLACES THE WORD NEXT TO THE IMAGE */
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+    }
+
+    /* Mentee label */
+    #navbar p span{
+        font-family: 'Poppins', sans-serif;
+        color: rgb(61, 119, 138);
+        font-size: 20px;
+
+
+    }
+
+    /* ------------ICONS------------- */
+    i{
+        margin-right: 8px;
+        /* puts space between the icons and the words in nav bar */
+    }
+
+    /* --------- ANIMATION FOR ICONS-------- */
+    /* change this animation */
+    #homeicon:hover .fa-home{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes bounce {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(
+            var(--bounce-offset)
+          );
+        }
+      }
+         
+    #mentors:hover .fa-users{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes jump-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateY(-4px) }
+        35% { transform: translateY(-4px) rotate(17deg) }
+        55% { transform: translateY(-4px) rotate(-17deg) }
+        65% { transform: translateY(-4px) rotate(17deg) }
+        75% { transform: translateY(-4px) rotate(-17deg) }
+        100% { transform: translateY(0) rotate(0) }
+    }
+         
+   
+    #book:hover .fa-book{
+        animation: skew-y-shakeing 1s ease-in infinite;
+    }
+       
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-15deg); }
+        5% { transform: skewY(15deg); }
+        10% { transform: skewY(-15deg); }
+        15% { transform: skewY(15deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+    }
+
+         
+    #chat:hover .fa-comments{
+        animation: tilt-shaking 0.25s infinite;
+    }
+     
+    @keyframes tilt-shaking {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-10deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    #calendar:hover .fa-calendar-days{
+        animation: skew-y-shakeing 1s ease-in infinite;
+    }
+       
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-15deg); }
+        5% { transform: skewY(15deg); }
+        10% { transform: skewY(-15deg); }
+        15% { transform: skewY(15deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+    }
+
+
+    #signout:hover .fa-arrow-right-from-bracket{
+        animation: moveright 1s ease-in infinite;
+    }
+     
+    @keyframes moveright {
+        0% {transform: translateX(-4px); opacity: 1;}
+        100% {transform: translateX(8px);opacity: 0;}
+    }
+   
+
+    /* Sign out button */
+    #sign-out{
+        font-size: 23px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all .1s cubic-bezier(.4, 0, .2, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
