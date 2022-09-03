@@ -1,3 +1,5 @@
+Built in collaboration with Vivian Tung, Christina Htay and Saima Firdus!!!
+
 ## Inspiration
 While researching for this Hackathon, we discovered a study on Psychology Today, which found that non-parental mentoring significantly affects positive youth development. After further research into this topic, we were shocked to find that teen girls and non-binary individuals had a considerably harder time managing stress than teen boys, partly because of a lack of steady role models. To bridge this gap, we created our solution, Mentorly, with hopes of providing mentors to young women and underrepresented genders for career advice, puberty support, sexuality crises, home-life troubles, and overall life guidance.
 
